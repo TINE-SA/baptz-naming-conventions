@@ -7,7 +7,7 @@
     },
     {
       "name": "AWS::Lightsail",
-      "template": "lightsail-{regionCode}{az}-{descriptiveName}"
+      "template": "lightsail-{regionCode}{azCode}-{descriptiveName}"
     },
     {
       "name": "EC2::AMI",
@@ -15,7 +15,7 @@
     },
     {
       "name": "EC2::Subnet",
-      "template": "sn-{regionCode}{az}-{vpcName}"
+      "template": "sn-{regionCode}{azCode}-{vpcName}"
     },
     {
       "name": "EC2::VPC",
@@ -35,7 +35,7 @@
     },
     {
       "name": "S3::Bucket",
-      "template": "hf-s3-{regionCode}-{envCode}-{descriptiveName}-{f:randomDigits(12)}"
+      "template": "{f:randomAlphanum(4)}-hf-s3-{regionCode}-{envCode}-{descriptiveName}-{f:randomDigits(12)}"
     }
   ],
   "questions": [
@@ -63,7 +63,7 @@
       "default": "ew1"
     },
     {
-      "name": "availabilityZone",
+      "name": "azCode",
       "message": "Availability Zone?",
       "type": "list",
       "choices": [
