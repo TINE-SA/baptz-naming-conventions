@@ -35,7 +35,7 @@
     },
     {
       "name": "S3::Bucket",
-      "template": "{f:randomAlphanum(4)}-hf-s3-{regionCode}-{envCode}-{descriptiveName}}"
+      "template": "{f:randomAlphanum(4)}-hf-s3-{regionCode}-{envCode}-{descriptiveName}"
     }
   ],
   "questions": [
