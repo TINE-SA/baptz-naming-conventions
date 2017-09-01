@@ -30,6 +30,10 @@
       "template": "cf-stack-{regionCode}-{descriptiveName}"
     },
     {
+      "name": "Cognito::IdentityPool",
+      "template": "cog-{regionCode}-idpool-{descriptiveName}"
+    },
+    {
       "name": "Cognito::UserPool",
       "template": "cog-{regionCode}-userpool-{descriptiveName}"
     },
