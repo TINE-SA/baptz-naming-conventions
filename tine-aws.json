@@ -15,7 +15,7 @@
     },
     {
       "name": "EC2::SecurityGroup",
-      "template": "sn-{regionCode}{azCode}-{vpcName}-{descriptiveName}"
+      "template": "sg-{regionCode}{azCode}-{vpcName}-{descriptiveName}"
     },
     {
       "name": "EC2::Subnet",
