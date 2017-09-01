@@ -14,6 +14,10 @@
       "template": "hf-ami-{amiName}-{version}"
     },
     {
+      "name": "EC2::SecurityGroup",
+      "template": "sn-{regionCode}{azCode}-{vpcName}-{descriptiveName}"
+    },
+    {
       "name": "EC2::Subnet",
       "template": "sn-{regionCode}{azCode}-{vpcName}"
     },
