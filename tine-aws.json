@@ -31,7 +31,7 @@
     },
     {
       "name": "Cognito::IdentityPool",
-      "template": "cog-{regionCode}-idpool-{descriptiveName}"
+      "template": "cog_{regionCode}_idpool_{descriptiveName}"
     },
     {
       "name": "Cognito::UserPool",
