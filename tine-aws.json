@@ -3,51 +3,63 @@
   "resources": [
     {
       "name": "AWS::KeyPair",
-      "template": "hf-keypair-{regionCode}-{descriptiveName}"
+      "shortname": "keypair",
+      "template": "{shortname}{pc:regionCode}{pc:descriptiveName}"
     },
     {
       "name": "AWS::Lightsail",
-      "template": "lightsail-{regionCode}{azCode}-{descriptiveName}"
-    },
-    {
-      "name": "EC2::AMI",
-      "template": "hf-ami-{amiName}-{version}"
-    },
-    {
-      "name": "EC2::SecurityGroup",
-      "template": "sg-{regionCode}{azCode}-{vpcName}-{descriptiveName}"
-    },
-    {
-      "name": "EC2::Subnet",
-      "template": "sn-{regionCode}{azCode}-{vpcName}"
-    },
-    {
-      "name": "EC2::VPC",
-      "template": "vpc-{regionCode}-{descriptiveName}"
-    },
-    {
-      "name": "EC2::VPCPeeringConnection",
-      "template": "pcx-{regionCode}-{fromVpc}-to-{toVpc}"
+      "shortname": "lightsail",
+      "template": "{shortname}{pc:regionCode}{uc:azCode}{pc:descriptiveName}"
     },
     {
       "name": "CloudFormation::Stack",
-      "template": "cf-stack-{regionCode}-{descriptiveName}"
+      "shortname": "cfs",
+      "template": "{shortname}{pc:regionCode}{pc:descriptiveName}"
     },
     {
       "name": "Cognito::IdentityPool",
-      "template": "cog_{regionCode}_idpool_{descriptiveName}"
+      "shortname": "cip",
+      "template": "{shortname}{pc:descriptiveName}"
     },
     {
       "name": "Cognito::UserPool",
-      "template": "cog-{regionCode}-userpool-{descriptiveName}"
+      "shortname": "cup",
+      "template": "{shortname}{pc:descriptiveName}"
+    },
+    {
+      "name": "EC2::AMI",
+      "shortname": "ami",
+      "template": "{shortname}{pc:amiName}-{version}"
+    },
+    {
+      "name": "EC2::Instance",
+      "shortname": "ec2i",
+      "template": "{shortname}{pc:descriptiveName}"
+    },
+    {
+      "name": "EC2::SecurityGroup",
+      "shortname": "ec2sg",
+      "template": "{shortname}{pc:vpcName}{pc:descriptiveName}"
+    },
+    {
+      "name": "EC2::Subnet",
+      "shortname": "ec2s",
+      "template": "{shortname}{pc:regionCode}{uc:azCode}{pc:vpcName}"
+    },
+    {
+      "name": "EC2::VPC",
+      "shortname": "ec2vpc",
+      "template": "{shortname}{pc:descriptiveName}"
+    },
+    {
+      "name": "IAM::Role",
+      "shortname": "iamr",
+      "template": "{shortname}{resourceRef}{pc:descriptiveName}"
     },
     {
       "name": "S3::Bucket",
-      "template": "{f:randomAlphanum(4)}-hf-s3-{regionCode}-{envCode}-{descriptiveName}"
-    },
-    {
-      "name": "ApiGateway::RestApi",
-      "template": "apigw-{regionCode}-{envCode}-{descriptiveName}"
+      "shortname": "s3b",
+      "template": "{f:randomCharsUpperCase(4)}{shortname}{pc:regionCode}{pc:envCode}{pc:descriptiveName}"
     }
   ],
   "questions": [
@@ -60,11 +72,6 @@
           "name": "eu-west-1 (Ireland)",
           "value": "ew1",
           "short": "ew1"
-        },
-        {
-          "name": "eu-west-2 (London)",
-          "value": "ew2",
-          "short": "ew2"
         },
         {
           "name": "eu-central-1 (Frankfurt)",
@@ -106,7 +113,8 @@
     {
       "name": "descriptiveName",
       "message": "Descriptive name:",
-      "type": "input"
+      "type": "input",
+      "validate": "validateNotEmpty"
     }
   ]
 }
