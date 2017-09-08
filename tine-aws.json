@@ -59,7 +59,7 @@
     {
       "name": "S3::Bucket",
       "shortname": "s3b",
-      "template": "{f:randomCharsUpperCase(4)}{shortname}{pc:regionCode}{pc:envCode}{pc:descriptiveName}"
+      "template": "{f:randomChars(4)}-{shortname}-{regionCode}-{envCode}-{kc:descriptiveName}"
     }
   ],
   "questions": [
