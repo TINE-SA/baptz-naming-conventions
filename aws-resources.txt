@@ -1,227 +1,227 @@
 A more updated list overview can be found here:
 http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html
 
-ApiGateway::Account
-ApiGateway::ApiKey
-ApiGateway::Authorizer
-ApiGateway::BasePathMapping
-ApiGateway::ClientCertificate
-ApiGateway::Deployment
-ApiGateway::DocumentationPart
+ApiGateway::Account aga
+ApiGateway::ApiKey agak
+ApiGateway::Authorizer aga1
+ApiGateway::BasePathMapping agabpm
+ApiGateway::ClientCertificate agcc
+ApiGateway::Deployment agd
+ApiGateway::DocumentationPart 
 ApiGateway::DocumentationVersion
-ApiGateway::DomainName
-ApiGateway::GatewayResponse
-ApiGateway::Method
-ApiGateway::Model
-ApiGateway::RequestValidator
-ApiGateway::Resource
-ApiGateway::RestApi
-ApiGateway::Stage
-ApiGateway::UsagePlan
-ApiGateway::UsagePlanKey
-ApplicationAutoScaling::ScalableTarget
-ApplicationAutoScaling::ScalingPolicy
-AutoScaling::AutoScalingGroup
-AutoScaling::LaunchConfiguration
-AutoScaling::LifecycleHook
-AutoScaling::ScalingPolicy
-AutoScaling::ScheduledAction
-Batch::ComputeEnvironment
+ApiGateway::DomainName agdn
+ApiGateway::GatewayResponse 
+ApiGateway::Method agm
+ApiGateway::Model agmod
+ApiGateway::RequestValidator 
+ApiGateway::Resource agr
+ApiGateway::RestApi agra
+ApiGateway::Stage ags
+ApiGateway::UsagePlan agup
+ApiGateway::UsagePlanKey agupk
+ApplicationAutoScaling::ScalableTarget aasst
+ApplicationAutoScaling::ScalingPolicy aassp
+AutoScaling::AutoScalingGroup asasg
+AutoScaling::LaunchConfiguration aslc
+AutoScaling::LifecycleHook aslh
+AutoScaling::ScalingPolicy assp
+AutoScaling::ScheduledAction assa
+Batch::ComputeEnvironment 
 Batch::JobDefinition
 Batch::JobQueue
-CertificateManager::Certificate
+CertificateManager::Certificate cmc
 CloudFormation::Authentication
-CloudFormation::CustomResource
-CloudFormation::Init
-CloudFormation::Interface
-CloudFormation::Stack
-CloudFormation::WaitCondition
-CloudFormation::WaitConditionHandle
-CloudFront::Distribution
-CloudTrail::Trail
-CloudWatch::Alarm
-CloudWatch::Dashboard
-CodeBuild::Project
-CodeCommit::Repository
-CodeDeploy::Application
-CodeDeploy::DeploymentConfig
-CodeDeploy::DeploymentGroup
-CodePipeline::CustomActionType
-CodePipeline::Pipeline
-Cognito::IdentityPool
-Cognito::IdentityPoolRoleAttachment
-Cognito::UserPool
-Cognito::UserPoolClient
-Cognito::UserPoolGroup
-Cognito::UserPoolUser
-Cognito::UserPoolUserToGroupAttachment
-Config::ConfigRule
-Config::ConfigurationRecorder
-Config::DeliveryChannel
-DataPipeline::Pipeline
+CloudFormation::CustomResource cfcr
+CloudFormation::Init 
+CloudFormation::Interface 
+CloudFormation::Stack cfs
+CloudFormation::WaitCondition cfwc
+CloudFormation::WaitConditionHandle cfwch
+CloudFront::Distribution cfd
+CloudTrail::Trail ctt
+CloudWatch::Alarm cwa
+CloudWatch::Dashboard cwd
+CodeBuild::Project cbp
+CodeCommit::Repository ccr
+CodeDeploy::Application cda
+CodeDeploy::DeploymentConfig cddc
+CodeDeploy::DeploymentGroup cddg
+CodePipeline::CustomActionType cpcat
+CodePipeline::Pipeline cpp
+Cognito::IdentityPool cip
+Cognito::IdentityPoolRoleAttachment cipra
+Cognito::UserPool cup
+Cognito::UserPoolClient cupc
+Cognito::UserPoolGroup cupg
+Cognito::UserPoolUser cupu
+Cognito::UserPoolUserToGroupAttachment cuputga
+Config::ConfigRule ccr
+Config::ConfigurationRecorder ccrec
+Config::DeliveryChannel cdc
+DataPipeline::Pipeline dpp
 DAX::Cluster
 DAX::ParameterGroup
 DAX::SubnetGroup
-DirectoryService::MicrosoftAD
-DirectoryService::SimpleAD
+DirectoryService::MicrosoftAD dsmad
+DirectoryService::SimpleAD dssad
 DMS::Certificate
 DMS::Endpoint
 DMS::EventSubscription
 DMS::ReplicationInstance
 DMS::ReplicationSubnetGroup
 DMS::ReplicationTask
-DynamoDB::Table
-EC2::CustomerGateway
-EC2::DHCPOptions
-EC2::EgressOnlyInternetGateway
-EC2::EIP
+DynamoDB::Table ddbt
+EC2::CustomerGateway ec2cg
+EC2::DHCPOptions ec2dhcp
+EC2::EgressOnlyInternetGateway ec2eoig
+EC2::EIP ec2eip
 EC2::EIPAssociation
-EC2::FlowLog
-EC2::Host
-EC2::Instance
-EC2::InternetGateway
-EC2::NatGateway
-EC2::NetworkAcl
-EC2::NetworkAclEntry
-EC2::NetworkInterface
+EC2::FlowLog ec2fl
+EC2::Host ec2h
+EC2::Instance ec2i
+EC2::InternetGateway ec2ig
+EC2::NatGateway ec2ng
+EC2::NetworkAcl ec2na
+EC2::NetworkAclEntry ec2nae
+EC2::NetworkInterface ec2ni
 EC2::NetworkInterfaceAttachment
 EC2::NetworkInterfacePermission
-EC2::PlacementGroup
-EC2::Route
-EC2::RouteTable
-EC2::SecurityGroup
+EC2::PlacementGroup ec2pg
+EC2::Route ec2r
+EC2::RouteTable ec2rt
+EC2::SecurityGroup ec2sg
 EC2::SecurityGroupEgress
 EC2::SecurityGroupIngress
-EC2::SpotFleet
-EC2::Subnet
-EC2::SubnetCidrBlock
+EC2::SpotFleet ec2sf
+EC2::Subnet ec2s
+EC2::SubnetCidrBlock ec2scb
 EC2::SubnetNetworkAclAssociation
 EC2::SubnetRouteTableAssociation
-EC2::Volume
+EC2::Volume ec2v
 EC2::VolumeAttachment
-EC2::VPC
-EC2::VPCCidrBlock
+EC2::VPC ec2vpc
+EC2::VPCCidrBlock ec2vpcc
 EC2::VPCDHCPOptionsAssociation
-EC2::VPCEndpoint
+EC2::VPCEndpoint ec2vpce
 EC2::VPCGatewayAttachment
 EC2::VPCPeeringConnection
-EC2::VPNConnection
-EC2::VPNConnectionRoute
-EC2::VPNGateway
+EC2::VPNConnection ec2vpnc
+EC2::VPNConnectionRoute ec2vpncr
+EC2::VPNGateway ec2vpng
 EC2::VPNGatewayRoutePropagation
-ECR::Repository
-ECS::Cluster
-ECS::Service
-ECS::TaskDefinition
-EFS::FileSystem
-EFS::MountTarget
-ElastiCache::CacheCluster
-ElastiCache::ParameterGroup
-ElastiCache::ReplicationGroup
-ElastiCache::SecurityGroup
+ECR::Repository ecrr
+ECS::Cluster ecsc
+ECS::Service ecss
+ECS::TaskDefinition ecstd
+EFS::FileSystem efsfs
+EFS::MountTarget efsmt
+ElastiCache::CacheCluster eccc
+ElastiCache::ParameterGroup ecpg
+ElastiCache::ReplicationGroup ecrg
+ElastiCache::SecurityGroup ecsg
 ElastiCache::SecurityGroupIngress
-ElastiCache::SubnetGroup
-ElasticBeanstalk::Application
-ElasticBeanstalk::ApplicationVersion
-ElasticBeanstalk::ConfigurationTemplate
-ElasticBeanstalk::Environment
-ElasticLoadBalancing::LoadBalancer
-ElasticLoadBalancingV2::Listener
+ElastiCache::SubnetGroup ecsng
+ElasticBeanstalk::Application eba
+ElasticBeanstalk::ApplicationVersion ebav
+ElasticBeanstalk::ConfigurationTemplate ebct
+ElasticBeanstalk::Environment ebe
+ElasticLoadBalancing::LoadBalancer elblb
+ElasticLoadBalancingV2::Listener elbv2l
 ElasticLoadBalancingV2::ListenerRule
-ElasticLoadBalancingV2::LoadBalancer
-ElasticLoadBalancingV2::TargetGroup
-Elasticsearch::Domain
+ElasticLoadBalancingV2::LoadBalancer elbv2lb 
+ElasticLoadBalancingV2::TargetGroup elbv2tg
+Elasticsearch::Domain ed
 EMR::Cluster
 EMR::InstanceFleetConfig
 EMR::InstanceGroupConfig
 EMR::SecurityConfiguration
 EMR::Step
-Events::Rule
-GameLift::Alias
-GameLift::Build
-GameLift::Fleet
-IAM::AccessKey
-IAM::Group
-IAM::InstanceProfile
-IAM::ManagedPolicy
-IAM::Policy
-IAM::Role
-IAM::User
-IAM::UserToGroupAddition
-IoT::Certificate
-IoT::Policy
+Events::Rule er
+GameLift::Alias gla
+GameLift::Build glb
+GameLift::Fleet glf
+IAM::AccessKey iamak
+IAM::Group iamg
+IAM::InstanceProfile iamip
+IAM::ManagedPolicy iammp
+IAM::Policy iamp
+IAM::Role iamr
+IAM::User iamu
+IAM::UserToGroupAddition iamutga
+IoT::Certificate itc
+IoT::Policy itp
 IoT::PolicyPrincipalAttachment
-IoT::Thing
+IoT::Thing itt
 IoT::ThingPrincipalAttachment
-IoT::TopicRule
-Kinesis::Stream
-KinesisAnalytics::Application
+IoT::TopicRule ittrl
+Kinesis::Stream ks
+KinesisAnalytics::Application 
 KinesisAnalytics::ApplicationOutput
 KinesisAnalytics::ApplicationReferenceDataSource
-KinesisFirehose::DeliveryStream
-KMS::Alias
-KMS::Key
-Lambda::EventSourceMapping
-Lambda::Alias
-Lambda::Function
-Lambda::Permission
-Lambda::Version
-Logs::Destination
-Logs::LogGroup
-Logs::LogStream
-Logs::MetricFilter
-Logs::SubscriptionFilter
-OpsWorks::App
+KinesisFirehose::DeliveryStream kfds
+KMS::Alias kmsa
+KMS::Key kmsk
+Lambda::EventSourceMapping lesm
+Lambda::Alias la
+Lambda::Function lf
+Lambda::Permission lp
+Lambda::Version lv
+Logs::Destination ld
+Logs::LogGroup llg
+Logs::LogStream lls
+Logs::MetricFilter lmf
+Logs::SubscriptionFilter lsf
+OpsWorks::App owa
 OpsWorks::ElasticLoadBalancerAttachment
-OpsWorks::Instance
-OpsWorks::Layer
-OpsWorks::Stack
-OpsWorks::UserProfile
-OpsWorks::Volume
-RDS::DBCluster
-RDS::DBClusterParameterGroup
-RDS::DBInstance
-RDS::DBParameterGroup
-RDS::DBSecurityGroup
+OpsWorks::Instance owi
+OpsWorks::Layer owl
+OpsWorks::Stack ows
+OpsWorks::UserProfile owup
+OpsWorks::Volume owv
+RDS::DBCluster rdsdbc
+RDS::DBClusterParameterGroup rdsdbcp
+RDS::DBInstance rdsdbi
+RDS::DBParameterGroup rdsdbpg
+RDS::DBSecurityGroup rdsdbsg
 RDS::DBSecurityGroupIngress
-RDS::DBSubnetGroup
-RDS::EventSubscription
-RDS::OptionGroup
-Redshift::Cluster
-Redshift::ClusterParameterGroup
-Redshift::ClusterSecurityGroup
+RDS::DBSubnetGroup rdsdbsng
+RDS::EventSubscription rdses
+RDS::OptionGroup rdsog
+Redshift::Cluster rc
+Redshift::ClusterParameterGroup rcpg
+Redshift::ClusterSecurityGroup rcsg
 Redshift::ClusterSecurityGroupIngress
-Redshift::ClusterSubnetGroup
-Route53::HealthCheck
-Route53::HostedZone
-Route53::RecordSet
-Route53::RecordSetGroup
-S3::Bucket
-S3::BucketPolicy
-SDB::Domain
-SNS::Subscription
-SNS::Topic
-SNS::TopicPolicy
-SQS::Queue
-SQS::QueuePolicy
-SSM::Association
-SSM::Document
-SSM::Parameter
-StepFunctions::Activity
-StepFunctions::StateMachine
-WAF::ByteMatchSet
-WAF::IPSet
-WAF::Rule
-WAF::SizeConstraintSet
-WAF::SqlInjectionMatchSet
-WAF::WebACL
-WAF::XssMatchSet
-WAFRegional::ByteMatchSet
-WAFRegional::IPSet
-WAFRegional::Rule
-WAFRegional::SizeConstraintSet
-WAFRegional::SqlInjectionMatchSet
-WAFRegional::WebACL
-WAFRegional::WebACLAssociation
-WAFRegional::XssMatchSet
-WorkSpaces::Workspace
+Redshift::ClusterSubnetGroup rcsng
+Route53::HealthCheck r53hc
+Route53::HostedZone r53hz
+Route53::RecordSet r53rs
+Route53::RecordSetGroup r53rsg
+S3::Bucket s3b
+S3::BucketPolicy s3bp
+SDB::Domain sdbd
+SNS::Subscription snss
+SNS::Topic snst
+SNS::TopicPolicy snstp
+SQS::Queue sqsq
+SQS::QueuePolicy sqsqp
+SSM::Association ssma
+SSM::Document ssmd
+SSM::Parameter ssmp
+StepFunctions::Activity sfa
+StepFunctions::StateMachine sfsm
+WAF::ByteMatchSet wafbms
+WAF::IPSet wafips
+WAF::Rule wafr
+WAF::SizeConstraintSet wafscs
+WAF::SqlInjectionMatchSet wafsims
+WAF::WebACL wafwacl
+WAF::XssMatchSet wafxms
+WAFRegional::ByteMatchSet wafrbms
+WAFRegional::IPSet wafrips
+WAFRegional::Rule wafrr
+WAFRegional::SizeConstraintSet wafrscs
+WAFRegional::SqlInjectionMatchSet wafrsim
+WAFRegional::WebACL wafrwac
+WAFRegional::WebACLAssociation wafrwa
+WAFRegional::XssMatchSet wafrxms
+WorkSpaces::Workspace wsw
