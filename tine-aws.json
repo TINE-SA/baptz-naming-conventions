@@ -2,6 +2,16 @@
   "name": "tine-aws",
   "resources": [
     {
+      "name": "ApiGateway::Resource",
+      "shortname": "agr",
+      "template": "{shortname}{pc:descriptiveName}"
+    },
+    {
+      "name": "ApiGateway::RestApi",
+      "shortname": "agra",
+      "template": "{shortname}{pc:descriptiveName}"
+    },
+    {
       "name": "AWS::KeyPair",
       "shortname": "keypair",
       "template": "{shortname}{pc:regionCode}{pc:descriptiveName}"
@@ -15,6 +25,11 @@
       "name": "CloudFormation::Stack",
       "shortname": "cfs",
       "template": "{shortname}{pc:regionCode}{pc:descriptiveName}"
+    },
+    {
+      "name": "CloudWatch::Alarm",
+      "shortname": "cwa",
+      "template": "{shortname}{pc:resourceRef}{pc:descriptiveName}{pc:hilo}"
     },
     {
       "name": "Cognito::IdentityPool",
@@ -52,9 +67,34 @@
       "template": "{shortname}{pc:descriptiveName}"
     },
     {
+      "name": "IAM::ManagedPolicy",
+      "shortname": "iammp",
+      "template": "{shortname}{pc:descriptiveName}"
+    },
+    {
       "name": "IAM::Role",
       "shortname": "iamr",
       "template": "{shortname}{resourceRef}{pc:descriptiveName}"
+    },
+    {
+      "name": "Kinesis::Stream",
+      "shortname": "ks",
+      "template": "{shortname}{pc:descriptiveName}"
+    },
+    {
+      "name": "KinesisFirehose::DeliveryStream",
+      "shortname": "kfds",
+      "template": "{shortname}{pc:descriptiveName}"
+    },
+    {
+      "name": "Lambda::Alias",
+      "shortname": "la",
+      "template": "{shortname}{pc:descriptiveName}"
+    },
+    {
+      "name": "Lambda::Function",
+      "shortname": "lf",
+      "template": "{shortname}{pc:descriptiveName}"
     },
     {
       "name": "S3::Bucket",
@@ -89,6 +129,15 @@
         "a",
         "b",
         "c"
+      ]
+    },
+    {
+      "name": "hilo",
+      "message": "High or Low?",
+      "type": "list",
+      "choices": [
+        "high",
+        "low"
       ]
     },
     {
