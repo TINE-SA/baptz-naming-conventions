@@ -24,7 +24,7 @@
     {
       "name": "CloudFormation::Stack",
       "shortname": "cfs",
-      "template": "{shortname}{pc:regionCode}{pc:descriptiveName}"
+      "template": "{shortname}{pc:descriptiveName}"
     },
     {
       "name": "CloudWatch::Alarm",
