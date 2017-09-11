@@ -105,6 +105,11 @@
       "name": "Elasticsearch::Domain",
       "shortname": "ed",
       "template": "{shortname}{pc:descriptiveName}"
+    }, 
+    {
+      "name": "CloudTrail::Trail",
+      "shortname": "ctt",
+      "template": "{shortname}{pc:descriptiveName}"
     } 
   ],
   "questions": [
