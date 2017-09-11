@@ -100,7 +100,12 @@
       "name": "S3::Bucket",
       "shortname": "s3b",
       "template": "{f:randomChars(4)}-{shortname}-{regionCode}-{envCode}-{kc:descriptiveName}"
-    }
+    }, 
+    {
+      "name": "Elasticsearch::Domain",
+      "shortname": "ed",
+      "template": "{shortname}{pc:descriptiveName}"
+    } 
   ],
   "questions": [
     {
