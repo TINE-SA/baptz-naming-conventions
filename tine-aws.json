@@ -110,6 +110,11 @@
       "name": "CloudTrail::Trail",
       "shortname": "ctt",
       "template": "{shortname}{pc:descriptiveName}"
+    }, 
+    {
+      "name": "Logs::LogStream",
+      "shortname": "lls",
+      "template": "{shortname}{pc:descriptiveName}"
     } 
   ],
   "questions": [
