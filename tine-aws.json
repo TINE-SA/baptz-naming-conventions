@@ -52,6 +52,11 @@
       "template": "{shortname}{pc:descriptiveName}"
     },
     {
+      "name": "ElasticLoadBalancingV2::LoadBalancer",
+      "shortname": "elbv2lb",
+      "template": "{shortname}{pc:descriptiveName}"
+    },
+    {
       "name": "EC2::SecurityGroup",
       "shortname": "ec2sg",
       "template": "{shortname}{pc:vpcName}{pc:descriptiveName}"
@@ -100,22 +105,22 @@
       "name": "S3::Bucket",
       "shortname": "s3b",
       "template": "{f:randomChars(4)}-{shortname}-{regionCode}-{envCode}-{kc:descriptiveName}"
-    }, 
+    },
     {
       "name": "Elasticsearch::Domain",
       "shortname": "ed",
       "template": "{shortname}{pc:descriptiveName}"
-    }, 
+    },
     {
       "name": "CloudTrail::Trail",
       "shortname": "ctt",
       "template": "{shortname}{pc:descriptiveName}"
-    }, 
+    },
     {
       "name": "Logs::LogStream",
       "shortname": "lls",
       "template": "{shortname}{pc:descriptiveName}"
-    } 
+    }
   ],
   "questions": [
     {
