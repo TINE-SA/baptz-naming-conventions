@@ -3,7 +3,7 @@
   "resources": [
     {
       "name": "ApiGateway::Authorizer",
-      "shortname": "agauth",
+      "shortname": "aga",
       "template": "{shortname}{pc:descriptiveName}"
     },
     {

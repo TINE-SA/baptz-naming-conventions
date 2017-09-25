@@ -1,9 +1,9 @@
 A more updated list overview can be found here:
 http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html
 
-ApiGateway::Account aga
+ApiGateway::Account agac
 ApiGateway::ApiKey agak
-ApiGateway::Authorizer agauth
+ApiGateway::Authorizer aga
 ApiGateway::BasePathMapping agabpm
 ApiGateway::ClientCertificate agcc
 ApiGateway::Deployment agd
