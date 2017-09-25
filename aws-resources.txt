@@ -3,7 +3,7 @@ http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resou
 
 ApiGateway::Account aga
 ApiGateway::ApiKey agak
-ApiGateway::Authorizer aga1
+ApiGateway::Authorizer agauth
 ApiGateway::BasePathMapping agabpm
 ApiGateway::ClientCertificate agcc
 ApiGateway::Deployment agd

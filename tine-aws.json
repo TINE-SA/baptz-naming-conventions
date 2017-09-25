@@ -2,6 +2,11 @@
   "name": "tine-aws",
   "resources": [
     {
+      "name": "ApiGateway::Authorizer",
+      "shortname": "agauth",
+      "template": "{shortname}{pc:descriptiveName}"
+    },
+    {
       "name": "ApiGateway::Resource",
       "shortname": "agr",
       "template": "{shortname}{pc:descriptiveName}"
