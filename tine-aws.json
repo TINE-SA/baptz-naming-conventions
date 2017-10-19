@@ -69,7 +69,7 @@
     {
       "name": "EC2::Subnet",
       "shortname": "ec2s",
-      "template": "{shortname}{pc:regionCode}{uc:azCode}{pc:vpcName}"
+      "template": "{shortname}{pc:regionCode}{uc:azCode}{pc:vpcDescriptiveName}{pc:descriptiveName}"
     },
     {
       "name": "EC2::VPC",
