@@ -57,6 +57,21 @@
       "template": "{shortname}{pc:descriptiveName}"
     },
     {
+      "name": "EC2::InternetGateway",
+      "shortname": "igw",
+      "template": "{shortname}-{pc:vpcDescriptiveName}"
+    },
+    {
+      "name": "EC2::NatGateway",
+      "shortname": "ngw",
+      "template": "{shortname}-{pc:vpcDescriptiveName}"
+    },
+    {
+      "name": "EC2::RouteTable",
+      "shortname": "ec2rt",
+      "template": "{shortname}{pc:vpcDescriptiveName}{pc:descriptiveName}"
+    },
+    {
       "name": "ElasticLoadBalancingV2::LoadBalancer",
       "shortname": "elbv2lb",
       "template": "{shortname}{pc:descriptiveName}"
@@ -73,8 +88,8 @@
     },
     {
       "name": "EC2::VPC",
-      "shortname": "ec2vpc",
-      "template": "{shortname}{pc:descriptiveName}"
+      "shortname": "vpc",
+      "template": "{shortname}-{pc:descriptiveName}"
     },
     {
       "name": "IAM::ManagedPolicy",
