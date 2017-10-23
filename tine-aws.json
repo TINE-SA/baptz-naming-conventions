@@ -102,6 +102,11 @@
       "template": "{shortname}-{pc:descriptiveName}"
     },
     {
+      "name": "IAM::InlinePolicy",
+      "shortname": "policy",
+      "template": "{kc:descriptiveName}-{shortname}"
+    },
+    {
       "name": "IAM::ManagedPolicy",
       "shortname": "iammp",
       "template": "{shortname}{pc:descriptiveName}"
