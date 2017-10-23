@@ -67,6 +67,11 @@
       "template": "{shortname}-{pc:vpcDescriptiveName}"
     },
     {
+      "name": "EC2::NetworkAcl",
+      "shortname": "nacl",
+      "template": "{shortname}-{pc:descriptiveName}"
+    },
+    {
       "name": "EC2::RouteTable",
       "shortname": "ec2rt",
       "template": "{shortname}{pc:vpcDescriptiveName}{pc:descriptiveName}"
