@@ -32,6 +32,11 @@
       "template": "{shortname}{pc:descriptiveName}"
     },
     {
+      "name": "CloudFront::Distribution",
+      "shortname": "cfd",
+      "template": "{shortname}{pc:descriptiveName}{pc:envName}CDN"
+    },
+    {
       "name": "CloudWatch::Alarm",
       "shortname": "cwa",
       "template": "{shortname}{pc:resourceRef}{pc:descriptiveName}{pc:hilo}"
@@ -205,6 +210,25 @@
         {
           "name": "Development",
           "value": "d"
+        }
+      ]
+    },
+    {
+      "name": "envName",
+      "message": "Environment?",
+      "type": "list",
+      "choices": [
+        {
+          "name": "Production",
+          "value": "prod"
+        },
+        {
+          "name": "Staging",
+          "value": "stage"
+        },
+        {
+          "name": "Development",
+          "value": "dev"
         }
       ]
     },
