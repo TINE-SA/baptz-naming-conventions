@@ -215,6 +215,14 @@
         {
           "name": "Development",
           "value": "d"
+        },
+        {
+          "name": "Sandbox",
+          "value": "x"
+        },
+        {
+          "name": "Operations",
+          "value": "o"
         }
       ]
     },
