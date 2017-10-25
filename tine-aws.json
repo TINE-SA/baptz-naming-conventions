@@ -7,6 +7,11 @@
       "template": "{shortname}{pc:descriptiveName}"
     },
     {
+      "name": "ApiGateway::BasePathMapping",
+      "shortname": "agabpm",
+      "template": "{shortname}{pc:restApiName}{pc:envName}"
+    },
+    {
       "name": "ApiGateway::Resource",
       "shortname": "agr",
       "template": "{shortname}{pc:descriptiveName}"
