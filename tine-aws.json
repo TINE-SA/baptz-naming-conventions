@@ -22,6 +22,11 @@
       "template": "{shortname}{pc:descriptiveName}"
     },
     {
+      "name": "ApiGateway::Stage",
+      "shortname": "ags",
+      "template": "{shortname}{pc:RestApiName}"
+    },
+    {
       "name": "AWS::KeyPair",
       "shortname": "keypair",
       "template": "{shortname}{pc:regionCode}{pc:descriptiveName}"
