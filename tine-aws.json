@@ -3,8 +3,7 @@
   "resources": [
     {
       "name": "ApiGateway::Authorizer",
-      "shortname": "aga",
-      "template": "{shortname}{pc:descriptiveName}"
+      "template": "{pc:descriptiveName}"
     },
     {
       "name": "ApiGateway::BasePathMapping",
@@ -13,13 +12,11 @@
     },
     {
       "name": "ApiGateway::Resource",
-      "shortname": "agr",
-      "template": "{shortname}{pc:descriptiveName}"
+      "template": "{pc:descriptiveName}"
     },
     {
       "name": "ApiGateway::RestApi",
-      "shortname": "agra",
-      "template": "{shortname}{pc:descriptiveName}"
+      "template": "{pc:descriptiveName}"
     },
     {
       "name": "ApiGateway::Stage",
@@ -28,8 +25,7 @@
     },
     {
       "name": "AWS::KeyPair",
-      "shortname": "keypair",
-      "template": "{shortname}{pc:regionCode}{pc:descriptiveName}"
+      "template": "{kc:descriptiveName}"
     },
     {
       "name": "AWS::Lightsail",
@@ -38,13 +34,11 @@
     },
     {
       "name": "CloudFormation::Stack",
-      "shortname": "cfs",
-      "template": "{shortname}{pc:descriptiveName}"
+      "template": "{pc:descriptiveName}"
     },
     {
       "name": "CloudFront::Distribution",
-      "shortname": "cfd",
-      "template": "{shortname}{pc:descriptiveName}{pc:envName}CDN"
+      "template": "{pc:descriptiveName}"
     },
     {
       "name": "CloudWatch::Alarm",
@@ -68,88 +62,73 @@
     },
     {
       "name": "EC2::Instance",
-      "shortname": "ec2i",
-      "template": "{shortname}{pc:descriptiveName}"
+      "template": "{kc:descriptiveName}"
     },
     {
       "name": "EC2::InternetGateway",
-      "shortname": "igw",
-      "template": "{shortname}-{pc:vpcDescriptiveName}"
+      "template": "{kc:vpcDescriptiveName}-igw"
     },
     {
       "name": "EC2::NatGateway",
-      "shortname": "ngw",
-      "template": "{shortname}-{pc:vpcDescriptiveName}"
+      "shortname": "nat",
+      "template": "{kc:vpcDescriptiveName}{shortname}"
     },
     {
       "name": "EC2::NetworkAcl",
-      "shortname": "nacl",
-      "template": "{shortname}-{pc:descriptiveName}"
+      "template": "{kc:descriptiveName}"
     },
     {
       "name": "EC2::RouteTable",
-      "shortname": "ec2rt",
-      "template": "{shortname}{pc:vpcDescriptiveName}{pc:descriptiveName}"
+      "template": "{kc:descriptiveName}"
     },
     {
       "name": "ElasticLoadBalancingV2::LoadBalancer",
-      "shortname": "elbv2lb",
-      "template": "{shortname}{pc:descriptiveName}"
+      "template": "{pc:descriptiveName}"
     },
     {
       "name": "EC2::SecurityGroup",
-      "shortname": "ec2sg",
-      "template": "{shortname}{pc:vpcName}{pc:descriptiveName}"
+      "template": "{kc:descriptiveName}"
     },
     {
       "name": "EC2::Subnet",
-      "shortname": "ec2s",
-      "template": "{shortname}{pc:regionCode}{uc:azCode}{pc:vpcDescriptiveName}{pc:descriptiveName}"
+      "template": "{kc:descriptiveName}-{uc:azCode}"
     },
     {
       "name": "EC2::VPC",
-      "shortname": "vpc",
-      "template": "{shortname}-{pc:descriptiveName}"
+      "template": "{kc:descriptiveName}"
     },
     {
       "name": "IAM::InlinePolicy",
       "shortname": "policy",
-      "template": "{kc:descriptiveName}-{shortname}"
+      "template": "{kc:descriptiveName}"
     },
     {
       "name": "IAM::ManagedPolicy",
-      "shortname": "iammp",
-      "template": "{shortname}{pc:descriptiveName}"
+      "template": "{pc:descriptiveName}"
     },
     {
       "name": "IAM::Role",
-      "shortname": "iamr",
-      "template": "{shortname}{resourceRef}{pc:descriptiveName}"
+      "template": "{pc:descriptiveName}"
     },
     {
       "name": "Kinesis::Stream",
-      "shortname": "ks",
-      "template": "{shortname}{pc:descriptiveName}"
+      "template": "{kc:descriptiveName}"
     },
     {
       "name": "KinesisFirehose::DeliveryStream",
-      "shortname": "kfds",
-      "template": "{shortname}{pc:descriptiveName}"
+      "template": "{kc:descriptiveName}"
     },
     {
       "name": "Lambda::Alias",
-      "shortname": "la",
-      "template": "{shortname}{pc:descriptiveName}"
+      "template": "{pc:descriptiveName}"
     },
     {
       "name": "Lambda::Function",
-      "shortname": "lf",
-      "template": "{shortname}{pc:descriptiveName}"
+      "template": "{pc:descriptiveName}"
     },
     {
       "name": "S3::Bucket",
-      "shortname": "s3b",
-      "template": "{f:randomChars(4)}-{shortname}-{regionCode}-{envCode}-{kc:descriptiveName}"
+      "template": "{kc:descriptiveName}-{kc:envName}"
     },
     {
       "name": "Elasticsearch::Domain",
@@ -242,16 +221,24 @@
       "type": "list",
       "choices": [
         {
-          "name": "Production",
-          "value": "prod"
+          "name": "Husdyrfag production",
+          "value": "husdyrfag-prod"
         },
         {
-          "name": "Staging",
-          "value": "stage"
+          "name": "Husdyrfag staging",
+          "value": "husdyrfag-staging"
         },
         {
-          "name": "Development",
-          "value": "dev"
+          "name": "Husdyrfag development",
+          "value": "husdyrfag-dev"
+        },
+        {
+          "name": "Sandbox",
+          "value": "sandbox"
+        },
+        {
+          "name": "Operations",
+          "value": "husdyrfag-ops"
         }
       ]
     },
